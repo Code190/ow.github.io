@@ -1,0 +1,667 @@
+body, html {
+     font-family:Markpro,helvetica,sans-serif;
+     font-family: 'Source Sans Pro', sans-serif;;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px;
+	overflow-x:hidden;
+	
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*--------------------------------------------------------------
+# back to top
+--------------------------------------------------------------*/
+#js-top {
+  position: fixed;
+  bottom: -200px;
+  right: 20px;
+  padding:14px;
+  z-index:1000000;
+  outline:none;
+  box-shadow:none;
+  border-radius:100px;
+  background:transparent;
+  border:1px solid #69B8A2;
+  z-index:100000;
+  transition: all ease 0.4s;
+}
+#js-top span{
+	color:#69B8A2;
+ z-index:100000;
+}
+#js-top:hover span{
+	color:#ffff;
+}
+#js-top:hover {
+ background:radial-gradient(circle at 71% 51%,#7851A9,#7851A9 57%);
+   border:1px solid #ffff;
+   transition: all 0.4s;
+}
+/*--------------------------------------------------------------
+# navbar section
+--------------------------------------------------------------*/
+.navbar{
+	border:none;
+	padding:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+    border-radius:0;
+    z-index:100;
+	background:#ffff;
+}
+.navbar .brand-logo{
+	font-size:20px;
+	font-weight:bold;
+}
+/*--------------------------------------------------------------
+# main-section
+--------------------------------------------------------------*/
+
+.main-section{
+	margin-top:-20px;
+	
+	background: url(../img/music.jpg);
+	width:130%;
+	border-radius:0% 0% 50% 50%;
+	margin-right:15%;
+	margin-left:-15%;
+	height:80%;
+	z-index:1;
+	
+	position:relative;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -60px; 
+    background-position-x: 60px; 
+	
+ 
+}
+.main-section:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    border-radius:0% 0% 50% 50%;
+    background: rgba(123,83,175,.8);
+    background-position-y: -60px; 
+    background-position-x: 60px;
+    z-index:-1;	
+}
+.main-section h1{
+    color:#ffff;
+	font-size:50px;
+	line-height:58px;
+	font-weight:600;
+}
+.main-section p{
+	color:#ffff;
+	font-size:18px;
+	line-height:28px;
+	margin-top:22px;
+}
+.main-section .btn{
+	width:330px;
+	height:50px;
+	font-size:20px;
+	border:none;
+	box-shadow:none;
+	outline:none;
+	text-transform:uppercase;
+	border-radius:8px;
+	font-weight:bold;
+	color:rgba(0,0,0,0.5);
+	margin-top:35px;
+}
+.main-section .btn:hover{
+	border:none;
+	box-shadow:none;
+	outline:none;
+	
+}
+/*--------------------------------------------------------------
+# for all section csss
+--------------------------------------------------------------*/ 
+.section h1{
+	font-size:35px;
+	color:rgba(0,0,0,0.9);
+	line-height:45px;
+	font-weight:600;
+}
+
+.section p{
+	font-size:17px;
+	color:rgba(0,0,0,0.6);
+	line-height:26px;
+	margin-top:33px;
+	font-weight:600;
+}
+.content-side {
+	 padding-left:140px;
+	 padding-top:50px;
+}
+.image-side {
+	 padding-left:140px;
+	 margin-top:20px;
+}
+.image-side-member{
+	margin-top:30px;
+}
+
+.section-2,.section-3,.section-4{
+	margin-top:170px;
+}
+.section-1{
+	margin-top:100px;
+}
+.section-5{
+	margin-top:140px;
+	background:#E5E6FA;
+	padding-top:70px;
+	padding-bottom:70px;
+}
+.section-5 h1{
+	color:#7851A9;
+	font-size:50px;
+	font-weight:600;
+}
+.section-5 p{
+	color:#7851A9;
+	font-size:20px;
+	margin-top:20px;
+}
+.section-5 p a{
+	color:rgba(0,0,0,0.8);
+}
+
+.section-6{
+	background:#7851A9;
+	margin-top:140px;
+	margin-bottom:0px;
+	padding-top:80px;
+	padding-bottom:20px;
+} 
+.section-6 h2{
+	color:#ffff;
+	font-size:30px;
+	font-weight:600;
+}
+.section-6 p{
+	color:#ffff;
+	font-size:16px;
+	opacity:0.8;
+	margin-top:10px;
+	margin-bottom:25px;
+}
+.section-6 .form-inline input{
+	width:280px;
+	height:50px;
+	box-shadow:none;
+	
+}
+.section-6 .form-inline input:focus{
+	border:1px solid #7851A9;
+	box-shadow:none;
+}
+.section-6 .form-inline .btn{
+	width:150px;
+	height:50px; 
+	font-size:18px;
+	font-weight:500;
+	color:#7851A9;
+	outline:none;
+	box-shadow:none;
+	border:none;
+	font-size:15px;
+	font-weight:600;
+}
+.section-6 .form-inline .btn:hover{
+	outline:none;
+	box-shadow:none;
+	border:none;
+}
+/*--------------------------------------------------------------
+# footer Section
+--------------------------------------------------------------*/
+.footer{
+	margin-top:50px;
+}
+
+.socile-icon{
+	float:right;
+	margin-top:10px;
+}
+.socile-icon li{
+	display:inline-block;
+	list-style-type:none;
+	margin-left:20px;
+}
+.socile-icon li i{
+	font-size:20px;
+	color:#ffff;
+	transition:all 0.3s ease;
+}
+.socile-icon li a{
+	text-decoration:none;
+}
+.socile-icon li a:hover i{
+	color:rgba(255,255,255,0.7);
+}
+/*--------------------------------------------------------------
+# popup or madal Section
+--------------------------------------------------------------*/
+.modal {
+  display: none; 
+  position: fixed; 
+ 
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+   z-index:10000;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  border-radius:0px;
+  
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fffff;
+  margin: auto;
+   z-index:1000;
+  padding: 0;
+  border: 1px solid #888;
+  width:550px;
+ 
+   border-radius:0px;
+   padding-bottom:0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+  color:#363535;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color:#757272;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+
+ 
+ color: #6a6a6a;
+ font-size: 16px;
+ text-align:center;
+ border:none;
+}
+
+.modal-body {
+	padding-top:0px;
+	margin-left:40px;
+	margin-right:40px;
+	border:1px solid #ddd;
+    background:#ffff;
+	border:none;
+}
+.modal-body center{
+	padding-top:10px;
+}
+.modal-body h3{
+	margin-top:-15px;
+	color:rgba(0,0,0,0.9);
+	font-weight:600;
+	margin-bottom:30px;
+}
+
+
+
+.modal .form-group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+
+.modal .form-field {
+  font-family: inherit;
+  width: 100%;
+  font-size: 16px;
+  padding: 7px 4px;
+  padding-left:10px;
+  background: transparent;
+  background:#ffff;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 1em 0;
+  border: 1px solid #E9E7E7;
+  border-radius:8px;
+  resize: none;
+  outline: none;
+}
+
+.modal input[type="text"],
+.modal input[type="email"] {
+    height: calc(3em + 2px);
+}
+
+.modal .form-field::placeholder {
+  color: transparent;
+}
+
+.modal .form-field:placeholder-shown ~ .form-label {
+  font-size: 13px;
+  cursor: text;
+ top: 31px;
+    left: 15;
+    color: rgba(100,100,100,0.4);
+}
+
+.modal label,
+.modal .form-field:focus ~ .form-label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #7851A9;
+  padding-left:1px;
+  padding-right:1px;
+  background-image: linear-gradient(to bottom, #ffff, #ffff);
+  background-size: 105% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal .form-field:focus ~ .form-label {
+  color: #7851A9;
+}
+
+.modal  .form-field:focus {
+  padding-bottom: 6px;
+  border: 1px solid #7851A9;
+  background-color:#ffff !important;
+}
+
+.modal input:-webkit-autofill,
+.modal input:-webkit-autofill:hover,
+.modal input:-webkit-autofill:focus,
+.modal input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+.flag-text { margin-left: 10px; }
+.modal select{
+	width:100%;
+	width: 100%;font-weight:bold;
+    height: 3.6em;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #E9E7E7;
+}
+
+
+
+.select-dropdown,
+.select-dropdown * {
+	margin: 0;
+	padding: 0;font-weight:bold;
+	position: relative;
+	box-sizing: border-box;
+}
+.select-dropdown {
+	position: relative;
+	background-color: #ffff;
+	border-radius: 8px;
+	border: 1px solid #E9E7E7;
+	color: rgba(100,100,100,0.4);
+	font-weight:bold;
+}
+.select-dropdown select {
+	font-size: 13px;
+	font-weight: normal;
+	max-width: 100%;
+	padding: 8px 24px 8px 13px;
+	border: none;
+	font-family: inherit;
+	font-weight:600;
+	background-color: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
+	color:rgba(0,0,0,0.9);
+	font-weight:100;
+	 border: 1px solid #7851A9;
+}
+.select-dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.phoneinput{
+	width:100%;
+}
+
+.modal .join{
+	margin-top:40px;
+	background:#7851A9;
+	border:none;
+	outline:none;
+	box-shadow:none;
+	transition:all 0.2s ease;
+	border-radius:8px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.modal .join:hover{
+	background:#67458E;
+	border:none;
+	outline:none;
+	box-shadow:none;
+}
+/*--------------------------------------------------------------
+# responsive or mobile Section
+--------------------------------------------------------------*/
+@media (max-width: 2180px) {
+	.main-section{
+	padding-top:10%}
+}
+@media (max-width: 1368px) {
+	.main-section{
+	padding-top:6%;
+}
+}
+@media (max-width: 1092px) {
+.content-side {
+	 padding-left:80px;
+	 padding-top:50px;
+}
+.image-side {
+	 padding-left:100px;
+}
+}
+@media (max-width: 992px) {
+.section-2,.section-3,.section-4{
+	margin-top:70px;
+}
+.section-1{
+	margin-top:70px;
+}
+.content-side {
+	 padding-left:0px;
+	 padding-top:50px;
+	 padding-bottom:50px;
+	 text-align:center;
+}
+.image-side {
+	 padding-left:0px;
+}
+.image-side img{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+
+@media (max-width: 768px) {
+	.main-section{
+	background: url(../img/music.jpg);
+	width:100%;
+	border-radius:0% 0% 0% 0%;
+	margin-right:0%;
+	margin-left:0%;
+	height:100%;
+	position:relative;
+	 background-size: cover;
+    background-repeat: no-repeat;
+     background-position-y: 0px; 
+     background-position-x: 0px; 
+	
+ 
+}
+.main-section:before {
+    content: "";
+    position: absolute;
+    left: 0;
+	right: 0;
+    top: 0;
+	bottom: 0;
+    border-radius:0% 0% 0% 0%;
+    background: rgba(0,0,0,0);
+    background-position-y: 0px; 
+    background-position-x: 0px; 
+}
+	.socile-icon {
+    float:left;
+    margin-top: 10px;
+}	
+}
+@media (max-width: 550px) {
+	
+.modal {
+ 
+padding-top: 0px;}
+	.modal-content {
+	width:400px;}
+	.modal-body {
+	
+	margin-left:20px;
+	margin-right:20px;}
+	
+
+}
+@media (max-width: 445px) {
+	.main-section{
+	padding-top:30%}
+		.main-section br{
+		display:none;
+	}	
+	.main-section h1{
+   margin-top:-20px;
+	font-size:35px;
+	
+}
+.main-section p{
+	
+	font-size:15px;
+	
+	margin-top:20px;
+}
+.main-section .btn{
+	width:280px;
+	height:45px;
+	font-size:15px;
+	margin-top:30px;
+}
+.section-5 h1 {
+    color: #7851A9;
+font-size: 40px;}
+	.section-6 .form-inline input {
+    width: 250px;}
+
+	.section br{
+	display:none;
+}
+	
+	
+	
+	
+	
+	
+}
+@media (max-width: 400px) {
+	
+.modal {
+ 
+padding-top: 0px;}
+	.modal-content {
+	width:335px;}
+	.modal-body {
+	
+	margin-left:10px;
+	margin-right:10px;}
+
+	
+
+}
+@media (max-width: 335px) {
+	
+.modal {
+ 
+padding-top: 0px;
+overflow-x:hidden;}
+	.modal-content {
+	width:300px;}
+	.modal-body {
+	
+	margin-left:5px;
+	margin-right:5px;}
+	
+
+}
+
+/* ..........https://stackoverflow.com/questions/60174146/how-to-implement-curve-background-in-css...........................content style end............... */
